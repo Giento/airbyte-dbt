@@ -1,0 +1,20 @@
+version: 2
+
+models:  
+  - name: parsed_comments_data
+    description: ""
+    columns:
+      - name: godina 
+      - name: mjesec
+      - name: dan
+      - name: projekt
+      - name: task
+      - name: djelatnik
+      - name: redovno
+      - name: prekovremeno
+      - name: ukupno_sati
+      - name: ukupno_cd
+      - name: komentar
+      - name: uc
+      - name: teh
+      - name: opis
