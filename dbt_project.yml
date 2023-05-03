@@ -34,7 +34,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   tashi_analytics_dbt:
     # Config indicated by + and applies to all files under models/example/
-    staging:
+    parsing:
       +materialized: table
-    test:
+    separate:
       +materialized: table

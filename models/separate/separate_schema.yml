@@ -1,0 +1,47 @@
+version: 2
+
+models:  
+  - name: not_ok
+    description: "test"
+    columns:
+      - name: godina 
+        description: ""
+
+      - name: mjesec
+        description: ""
+
+      - name: dan
+        description: ""
+
+      - name: projekt
+        description: ""
+
+      - name: task
+        description: ""
+
+      - name: djelatnik
+        description: ""
+
+      - name: redovno
+        description: ""
+
+      - name: prekovremeno
+        description: ""
+
+      - name: ukupno_sati
+        description: ""
+
+      - name: ukupno_cd
+        description: ""
+
+      - name: komentar
+        description: ""
+
+      - name: uc
+        description: ""
+
+      - name: teh
+        description: ""
+
+      - name: opis
+        description: ""

@@ -8,9 +8,7 @@ SELECT
       'g'
     ) AS transformed_komentar
   FROM
-    analitika_croz_prakse_bidwh_2022_csv 
-  WHERE
-    UPPER(komentar) SIMILAR TO '%(TEH:|TEH :|TECH:|TECH :)%'
+    analitika_croz_prakse_bidwh_2022_csv
 ) select
 	godina,
 	mjesec,
