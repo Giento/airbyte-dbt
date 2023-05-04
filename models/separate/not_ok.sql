@@ -21,5 +21,5 @@ SELECT
   FROM
     parsed_comment
     where
-    	teh = '' and 
-    	task not like 'TIMSKI SASTANCI, RETROSPEKTIVE, RADIONICE'
+    	(teh <> '' and uc = '' and komentar not like 'TEH%') or 
+	(teh = '' and task not like 'TIMSKI SASTANCI, RETROSPEKTIVE, RADIONICE')
