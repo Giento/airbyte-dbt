@@ -28,4 +28,4 @@ SELECT
     updated_komentar
     LEFT JOIN LATERAL (SELECT regexp_matches(transformed_komentar, 'UC: ([^|]+)') AS uc_match) uc ON TRUE
     LEFT JOIN LATERAL (SELECT regexp_matches(transformed_komentar, 'TEH: ([^|]+)') AS teh_match) teh ON TRUE
-    LEFT JOIN LATERAL (SELECT regexp_matches(transformed_komentar, '(?:UC: [^|]+\| |TEH: [^|]+\| )*(.+)') AS opis_match) opis ON true
+    LEFT JOIN LATERAL (SELECT regexp_matches(transformed_komentar, '(?:UC: [^|]+\| |TEH: [^|]+\|)*(.+)') AS opis_match) opis ON true
