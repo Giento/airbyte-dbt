@@ -21,9 +21,9 @@ SELECT
 	ukupno_sati,
 	ukupno_cd,
     transformed_komentar AS komentar,
-    coalesce(uc_match[1], '') AS uc,
-    coalesce(teh_match[1], '') AS teh,
-    coalesce(opis_match[1], '') AS opis
+    coalesce(TRIM(uc_match[1]), '') AS uc,
+    coalesce(TRIM(teh_match[1]), '') AS teh,
+    coalesce(TRIM(opis_match[1]), '') AS opis
   FROM
     updated_komentar
     LEFT JOIN LATERAL (SELECT regexp_matches(transformed_komentar, 'UC: ([^|]+)') AS uc_match) uc ON TRUE
